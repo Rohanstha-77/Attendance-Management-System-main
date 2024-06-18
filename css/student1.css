@@ -1,0 +1,212 @@
+:root {
+  --primaryColor: #1352ab;
+  --secondaryColor: #2e34a4;
+  --bodyColor: #ebe9e9;
+  --lightGreyColor: #f4f5fa;
+  --whiteColor: #ffffff;
+  --blackColor: #222;
+  --lightBlackColor: #454955;
+  --darkPurpleColor: #2c2f4e;
+  --redColor: rgb(255, 55, 0);
+  --greenColor: rgb(89, 183, 110);
+  --lightBlue: rgb(52, 116, 245);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: poppins;
+  background-color: var(--lightGreyColor);
+}
+a {
+  text-decoration: none;
+}
+.body_container {
+  display: flex;
+}
+.background {
+  filter: blur(8px);
+  z-index: 1;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-size: cover;
+}
+.sidebar {
+  background-color: var(--primaryColor);
+  /* height: 100vh; */
+  position: sticky;
+  padding: 20px;
+  width: 90px;
+  transition: all 0.5s linear;
+  overflow: hidden;
+}
+.sidebar:hover {
+  width: 270px;
+  transition: 0.5s;
+  overflow: hidden;
+}
+.active {
+  border-radius: 15px;
+  background-color: var(--secondaryColor);
+}
+.side_menu {
+  /* background-color: yellow; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90vh;
+}
+.menu_item {
+  margin-bottom: 200px;
+}
+.item {
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  color: var(--whiteColor);
+  font-size: 15px;
+  margin-top: 15px;
+  height: 50px;
+}
+.item i {
+  font-size: 20px;
+  margin-right: 37px;
+}
+.item:hover {
+  border-radius: 15px;
+  background-color: var(--secondaryColor);
+}
+.item p {
+  /* background-color: red; */
+  height: 20px;
+  overflow: hidden;
+}
+.main_section {
+  /* background-color: red; */
+  height: 200px;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+.search_container {
+  display: flex;
+  align-items: center;
+  background-color: var(--whiteColor);
+  border-radius: 10px;
+  padding: 10px 20px;
+  justify-content: space-between;
+}
+
+.search_btn input {
+  font-size: 20px;
+  border: 1px solid var(--blackColor);
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+.search_btn button {
+  font-size: 20px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--primaryColor);
+  color: var(--whiteColor);
+}
+.search_btn button i {
+  margin-right: 10px;
+}
+.header {
+  /* background-color: red; */
+  color: var(--primaryColor);
+}
+
+.profile_container {
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+}
+.profile_btn {
+  display: flex;
+  align-items: center;
+  background-color: var(--bodyColor);
+  border-radius: 100px;
+  height: 45px;
+}
+.letter {
+  background-color: var(--secondaryColor);
+  color: var(--whiteColor);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  font-weight: 500;
+  border-radius: 100px;
+  box-shadow: rgba(1, 1, 1, 0.2) 0px 2px 10px 2px;
+}
+.profile_btn p {
+  width: 100px;
+  margin-left: 10px;
+  color: var(--lightBlackColor);
+}
+.logo_img img {
+  width: 50px;
+  /* background-color: red; */
+}
+
+.application_form {
+  padding: 0px 20px;
+  h2 {
+    color: var(--lightBlackColor);
+  }
+  .form_container {
+    /* background-color: var(--redColor); */
+    padding: 20px;
+    .fields {
+      /* background-color:yellow; */
+      .input_fields {
+        display: flex;
+        /* background-color: red; */
+        flex-direction: column;
+        margin-top: 20px;
+        label {
+          font-size: 18px;
+          font-weight: 500;
+        }
+        input {
+          border: 1px solid black;
+          padding: 5px 10px;
+          border-radius: 5px;
+          font-size: 18px;
+          width: 450px;
+        }
+        textarea {
+          border: 1px solid black;
+          padding: 5px 10px;
+          border-radius: 5px;
+          font-size: 18px;
+          height: 300px;
+        }
+      }
+    }
+    .submit_btn{
+      padding: 20px;
+      button{
+        font-size: 20px;
+        padding: 5px 10px;
+        background-color: var(--primaryColor);
+        color: var(--whiteColor);
+        border: none;
+        border-radius: 5px;
+      }
+    }
+  }
+}
+#datepicker {
+  width: 200px;
+}

@@ -1,0 +1,92 @@
+:root {
+  --primaryColor: #7163ba;
+  --secondaryColor: #978ec7;
+  --bodyColor: #ebe9e9;
+  --lightGreyColor: #f4f5fa;
+  --whiteColor: #ffffff;
+  --blackColor: #222;
+  --lightBlackColor: #454955;
+  --darkPurpleColor: #2c2f4e;
+  --redColor: rgb(255, 55, 0);
+  --greenColor: rgb(89, 183, 110);
+  --lightBlue: rgb(52, 116, 245);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: poppins;
+  background-color: var(--bodyColor);
+}
+.body_container {
+  background-color: var(--whiteColor);
+  width: 100%;
+  height: 100vh;
+  padding: 20px;
+}
+.back_btn button {
+  padding: 5px 10px;
+  font-size: 20px;
+  color: var(--lightBlackColor);
+}
+.body_container h2{
+    display: flex;
+    justify-content: center;
+    color: var(--lightBlackColor);
+}
+.semester_container{
+    /* background-color: red; */
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.semester_card{
+    background-color: var(--lightGreyColor);
+    display: flex;
+    border-radius: 10px;
+    width: 250px;
+    overflow: hidden;
+    margin: 20px;
+}
+.semester_card:hover{
+  box-shadow: rgba(96, 95, 95, 0.2) 0px 2px 10px 2px;
+  z-index: 2;
+}
+.semester_card p{
+    font-size: 25px;
+    font-weight: 500;
+    padding: 10px;
+    color: var(--whiteColor);
+}
+.semester_card img{
+    width: 150px;
+}
+.one{
+background-color: #6F96D1;
+}
+.two{
+    background-color: #CA9255;
+}
+.three{
+    background-color: #56597C;
+}
+.four{
+    background-color: #837C5F;
+}
+.five{
+    background-color: #D0E4FF;
+}
+.six{
+    background-color: #344EAD;
+}
+.seven{
+    background-color: #A69CAC;
+}
+.eight{
+    background-color: #496569;
+}
+a{
+    text-decoration: none;
+}
